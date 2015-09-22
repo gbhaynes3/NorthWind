@@ -1,19 +1,23 @@
-﻿<div>
-    <h3>Customers</h3>
-    
-    <table>
+﻿<div contenteditable="false">
+    <h3><u>Customers</u></h3>
+    <table border="1" cellpadding="3" cellspacing="3" height="3">
         <thead>
-            <tr>
-                <th>Customer Id</th>
-                <th>Company</th>
-                <th>Contact</th>
-            </tr>
+            <tr>                        
+                <th width="100" height="4">Customer ID</th>
+                <th width="260" height="4">Company</th>
+                <th width="180" height="4">Contacts</th>
+            </tr>                       
         </thead>
-        <tbody data-bind="foreach: customerData">
-            <tr>
-                <td data-bind="text: customerID"></td>
-                <td data-bind="text: companyName"></td>
-                <td data-bind="text: contactName"></td>
+    </table>
+</div>
+
+<div contenteditable="true">
+    <table border="1" cellpadding="3" cellspacing="3" height="3">
+        <tbody data-bind="foreach: customerData" contenteditable="true">
+            <tr contenteditable="true">
+                <td data-bind="text: customerID" width="100" height="2"></td>
+                <td data-bind="text: companyName" width="260" height="2"></td>
+                <td data-bind="text: contactName" width="180" height="2"></td>
             </tr>
         </tbody>
     </table>
